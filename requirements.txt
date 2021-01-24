@@ -1,2 +1,3 @@
-behave
-selenium
+behave==1.2.6
+ipdb==0.13.4
+selenium==3.141.0
