@@ -1,0 +1,35 @@
+<testsuite name="contact.contact.Validação da área de contato" tests="2" errors="0" failures="0" skipped="0" time="15.132042" timestamp="2021-01-24T21:34:58.359326" hostname="admim-Inspiron-7580"><testcase classname="contact.contact.Validação da área de contato" name="Validação de envio de mensagem" status="passed" time="9.594836"><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de envio de mensagem
+    Dado que acesso o link ... passed in 6.272s
+    E acesso a área de contato ... passed in 1.376s
+    Quando preencho com os seguintes dados ... passed in 1.918s
+      | Name    | Value              |
+      | subject | Webmaster          |
+      | email   | teste.me@teste.com |
+      | order   | order teste        |
+      | message | mensagem teste     |
+    Então a mensagem deve ser enviada com "sucesso" ... passed in 0.028s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="contact.contact.Validação da área de contato" name="Validação de dados inclompletos" status="passed" time="5.537206"><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de dados inclompletos
+    Dado que acesso o link ... passed in 1.328s
+    E acesso a área de contato ... passed in 2.094s
+    Quando preencho com os seguintes dados ... passed in 2.087s
+      | Name    | Value              |
+      | subject | Webmaster          |
+      | email   | teste.me@teste.com |
+      | order   | order teste        |
+      | message |                    |
+    Então a mensagem deve ser enviada com "falha" ... passed in 0.029s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

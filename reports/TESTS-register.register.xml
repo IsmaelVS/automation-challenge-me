@@ -1,0 +1,90 @@
+<testsuite name="register.register.Validação de cadastro" tests="4" errors="0" failures="0" skipped="3" time="12.997173" timestamp="2021-01-24T21:30:08.521841" hostname="admim-Inspiron-7580"><testcase classname="register.register.Validação de cadastro" name="Validação de cadastro" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de cadastro
+    Dado que acesso o link ... skipped in 0.000s
+    Quando preencho com o seguinte email "hihi@hihi.com" ... skipped in 0.000s
+    Então deve ser preenchido com os seguintes dados ... skipped in 0.000s
+      | Name         | Value                |
+      | title        | Mr.                  |
+      | first name   | teste                |
+      | last name    | ME                   |
+      | email        | hihi@hihi.com        |
+      | password     | xpto12345            |
+      | day          | 2                    |
+      | month        | May                  |
+      | year         | 1998                 |
+      | newletter    | True                 |
+      | partners     | True                 |
+      | company      | ME                   |
+      | address1     | Rua da automatização |
+      | address2     | Rua dos Bugs         |
+      | city         | buglândia            |
+      | state        | Hawaii               |
+      | post code    | 12345                |
+      | country      | United States        |
+      | other        | hehe                 |
+      | phone        | 199999999            |
+      | phone_mobile | 199999999            |
+      | alias        | teste                |
+    E deve ser cadastrado ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="register.register.Validação de cadastro" name="Cadastro incompleto" status="passed" time="12.997173"><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Cadastro incompleto
+    Dado que acesso o link ... passed in 5.220s
+    Quando preencho com o seguinte email "hihihi@me.com" ... passed in 2.148s
+    Então deve ser preenchido com os seguintes dados ... passed in 5.618s
+      | Name         | Value                |
+      | title        | Mr.                  |
+      | first name   | teste                |
+      | last name    | ME                   |
+      | password     | xpto                 |
+      | day          | 2                    |
+      | month        | May                  |
+      | year         | 1998                 |
+      | newletter    | True                 |
+      | partners     | True                 |
+      | company      | ME                   |
+      | address1     | Rua da automatização |
+      | address2     | Rua dos Bugs         |
+      | city         | buglândia            |
+      | state        | Hawaii               |
+      | post code    | 12345                |
+      | country      | United States        |
+      | other        | hehe                 |
+      | phone        | 199999999            |
+      | phone_mobile | 199999999            |
+      | alias        | teste                |
+    Então deve exibir a mensagem de erro ... passed in 0.011s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="register.register.Validação de cadastro" name="Validação de email já cadastrado" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de email já cadastrado
+    Dado que acesso o link ... skipped in 0.000s
+    Quando preencho com o seguinte email "teste.me@teste.com" ... skipped in 0.000s
+    Então deve exibir a mensagem de erro ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="register.register.Validação de cadastro" name="Validação de email inválido" status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de email inválido
+    Dado que acesso o link ... skipped in 0.000s
+    Quando preencho com o seguinte email "teste.inválido.com" ... skipped in 0.000s
+    Então deve exibir a mensagem de erro ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

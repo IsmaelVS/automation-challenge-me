@@ -1,0 +1,40 @@
+<testsuite name="login.Validação de login" tests="3" errors="1" failures="0" skipped="2" time="2.168221" timestamp="2021-01-24T22:16:16.822327" hostname="admim-Inspiron-7580"><testcase classname="login.Validação de login" name="Validação de login correto" status="failed" time="2.168221"><error type="KeyboardInterrupt" message="">
+<![CDATA[
+Failing step: Dado que acesso o link ... failed in 2.168s
+Location: feature/login.feature:9
+None]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de login correto
+    Dado que acesso o link ... failed in 2.168s
+    E realizo o login com os campos "teste.me@teste.com" e "devel123" ... untested in 0.000s
+    Então o login deve ser finalizado com "sucesso" ... untested in 0.000s
+    E devo deslogar ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Validação de login" name="Validação de login incorreto -- @1.1 " status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de login incorreto -- @1.1 
+    Dado que acesso o link ... untested in 0.000s
+    E realizo o login com os campos "teste_incorreto@teste.com" e "devel123" ... untested in 0.000s
+    Então o login deve ser finalizado com "Authentication failed." ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Validação de login" name="Validação de login vazio -- @1.2 " status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de login vazio -- @1.2 
+    Dado que acesso o link ... untested in 0.000s
+    E realizo o login com os campos "" e "" ... untested in 0.000s
+    Então o login deve ser finalizado com "An email address required." ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

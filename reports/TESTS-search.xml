@@ -1,0 +1,23 @@
+<testsuite name="search.Validação do campo de busca" tests="2" errors="0" failures="0" skipped="0" time="14.46989" timestamp="2021-01-24T22:18:26.869591" hostname="admim-Inspiron-7580"><testcase classname="search.Validação do campo de busca" name="Validação de busca valida -- @1.1 " status="passed" time="10.778273"><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de busca valida -- @1.1 
+    Dado que acesso o link ... passed in 6.374s
+    Quando realizo uma busca por "Printed" ... passed in 4.368s
+    Então devo ter "5" items encontrados ... passed in 0.035s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="search.Validação do campo de busca" name="Validação de busca inválida -- @1.2 " status="passed" time="3.691617"><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de busca inválida -- @1.2 
+    Dado que acesso o link ... passed in 1.469s
+    Quando realizo uma busca por "Python" ... passed in 2.196s
+    Então devo ter "0" items encontrados ... passed in 0.027s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

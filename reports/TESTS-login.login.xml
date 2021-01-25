@@ -1,0 +1,162 @@
+<testsuite name="login.login.Casos de teste para validação de login" tests="3" errors="1" failures="0" skipped="2" time="4110.161226" timestamp="2021-01-24T19:09:54.959726" hostname="admim-Inspiron-7580"><testcase classname="login.login.Casos de teste para validação de login" name="Validação de login correto" status="failed" time="4110.161226"><error type="WebDriverException" message="Message: No active session with ID fe4d9f49edfbdf89b558e694939deb4b&#10;">
+<![CDATA[
+Failing step: Dado que acesso o link ... failed in 4110.161s
+Location: feature/login/login.feature:9
+Traceback (most recent call last):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "feature/steps/steps.py", line 9, in get
+    import ipdb; ipdb.sset_trace()
+  File "/usr/lib/python3.8/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/usr/lib/python3.8/bdb.py", line 154, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+Captured stderr:
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 113, in get_completions
+    yield from self._get_completions(body, offset, cursor_position, self.ipy_completer)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 129, in _get_completions
+    for c in completions:
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 438, in _deduplicate_completions
+    completions = list(completions)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1861, in _completions
+    matched_text, matches, matches_origin, jedi_matches = self._complete(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 2029, in _complete
+    completions = self._jedi_matches(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1373, in _jedi_matches
+    interpreter = jedi.Interpreter(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/jedi/api/__init__.py", line 725, in __init__
+    super().__init__(code, environment=environment,
+TypeError: __init__() got an unexpected keyword argument 'column'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/debugger.py", line 122, in in_thread
+    line = self.pt_app.prompt()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/shortcuts/prompt.py", line 1013, in prompt
+    return self.app.run(set_exception_handler=set_exception_handler)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 825, in run
+    return loop.run_until_complete(
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 792, in run_async
+    return await _run_async2()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 780, in _run_async2
+    await self.cancel_and_wait_for_background_tasks()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 881, in cancel_and_wait_for_background_tasks
+    await task
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/buffer.py", line 1909, in new_coroutine
+    await coroutine(*a, **kw)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/buffer.py", line 1738, in async_completer
+    async for completion in self.completer.get_completions_async(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/completion/base.py", line 269, in get_completions_async
+    async for completion in completer.get_completions_async(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/completion/base.py", line 196, in get_completions_async
+    for item in self.get_completions(document, complete_event):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 116, in get_completions
+    exc_type, exc_value, exc_tb = sys.exc_info()
+NameError: name 'sys' is not defined]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Validação de login correto
+    Dado que acesso o link ... failed in 4110.161s
+    E realizo o login com os campos "teste.me@teste.com" e "devel123" ... skipped in 0.000s
+    Então o login deve ser finalizado com "sucesso" ... skipped in 0.000s
+    E devo deslogar ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 113, in get_completions
+    yield from self._get_completions(body, offset, cursor_position, self.ipy_completer)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 129, in _get_completions
+    for c in completions:
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 438, in _deduplicate_completions
+    completions = list(completions)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1818, in completions
+    for c in self._completions(text, offset, _timeout=self.jedi_compute_type_timeout/1000):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1861, in _completions
+    matched_text, matches, matches_origin, jedi_matches = self._complete(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 2029, in _complete
+    completions = self._jedi_matches(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/core/completer.py", line 1373, in _jedi_matches
+    interpreter = jedi.Interpreter(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/jedi/api/__init__.py", line 725, in __init__
+    super().__init__(code, environment=environment,
+TypeError: __init__() got an unexpected keyword argument 'column'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/debugger.py", line 122, in in_thread
+    line = self.pt_app.prompt()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/shortcuts/prompt.py", line 1013, in prompt
+    return self.app.run(set_exception_handler=set_exception_handler)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 825, in run
+    return loop.run_until_complete(
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 792, in run_async
+    return await _run_async2()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 780, in _run_async2
+    await self.cancel_and_wait_for_background_tasks()
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/application/application.py", line 881, in cancel_and_wait_for_background_tasks
+    await task
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/buffer.py", line 1909, in new_coroutine
+    await coroutine(*a, **kw)
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/buffer.py", line 1738, in async_completer
+    async for completion in self.completer.get_completions_async(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/completion/base.py", line 269, in get_completions_async
+    async for completion in completer.get_completions_async(
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/prompt_toolkit/completion/base.py", line 196, in get_completions_async
+    for item in self.get_completions(document, complete_event):
+  File "/home/ismael/.local/share/virtualenvs/automation-challenge-me-Fz0H6NkE/lib/python3.8/site-packages/IPython/terminal/ptutils.py", line 116, in get_completions
+    exc_type, exc_value, exc_tb = sys.exc_info()
+NameError: name 'sys' is not defined
+
+]]>
+</system-err></testcase><testcase classname="login.login.Casos de teste para validação de login" name="Validação de login incorreto -- @1.1 " status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de login incorreto -- @1.1 
+    Dado que acesso o link ... skipped in 0.000s
+    E realizo o login com os campos "teste_incorreto@teste.com" e "devel123" ... skipped in 0.000s
+    Então o login deve ser finalizado com "Authentication failed." ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.login.Casos de teste para validação de login" name="Validação de login vazio -- @1.2 " status="skipped" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Esquema do Cenário: Validação de login vazio -- @1.2 
+    Dado que acesso o link ... skipped in 0.000s
+    E realizo o login com os campos "" e "" ... skipped in 0.000s
+    Então o login deve ser finalizado com "An email address required." ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
