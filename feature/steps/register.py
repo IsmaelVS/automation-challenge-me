@@ -1,3 +1,4 @@
+"""File to steps register."""
 from time import sleep
 
 from behave import given, step, then

@@ -1,6 +1,7 @@
+"""File to steps generics."""
 from behave import given, step, then, when
-from selenium.webdriver.support.ui import Select
 
+from helpers.helper import select_item
 from pages.base import BasePage
 
 
@@ -21,13 +22,7 @@ def to_contact(self):
 def message_contact(self):
     table = {row['Name']: row['Value'] for row in self.table}
 
-    select_field = self.driver.find_element_by_id("id_contact")
-    select = Select(select_field)
-    options = select.options
-
-    for option in options:
-        if option.text == table['subject']:
-            option.click()
+    select_item(self, 'id_contact', table['subject'])
 
     email_field = self.driver.find_element_by_id("email")
     email_field.send_keys(table['email'])

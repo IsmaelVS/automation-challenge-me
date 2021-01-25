@@ -1,4 +1,4 @@
-from selenium.webdriver.support.ui import Select
+"""Base Page this project."""
 
 
 class BasePage:

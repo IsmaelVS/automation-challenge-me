@@ -1,3 +1,4 @@
+"""Base Page register."""
 from selenium.webdriver.support.ui import Select
 
 

@@ -1,7 +1,7 @@
 # language: pt
 # encoding: utf-8
 
-Funcionalidade: Casos de teste para validação de login
+Funcionalidade: Validação de login
 
   Eu, como um usuário da plataforma, desejo realizar o login.
 
