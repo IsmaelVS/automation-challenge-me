@@ -47,3 +47,16 @@ def result(self, message: str):
         alert = self.driver.find_element_by_class_name('alert.alert-danger')
 
         assert alert.text.split('\n')[-1] == 'The message cannot be blank.'
+
+
+@when('realizo uma busca por "{value}"')
+def validate_search(self, value: str):
+    base = BasePage(self.driver)
+    base.search(value)
+
+
+@then('devo ter "{result}" items encontrados')
+def validate_result(self, result: str):
+    counter = self.driver.find_element_by_class_name('heading-counter')
+
+    assert result in counter.text

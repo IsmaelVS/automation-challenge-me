@@ -24,6 +24,7 @@ class BasePage:
         self.shopping_cart.click()
 
     def search(self, value: str) -> None:
+        self.search_field.clear()
         self.search_field.send_keys(value)
         self.search_button.click()
 
